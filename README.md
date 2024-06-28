@@ -74,5 +74,5 @@ investment_advisor/
 3. Review the investment advice generated based on your input.
 
 ## Contact
-If you have any questions or feedback, please reach out to [681334yd@eur.nl].
+If you have any questions, please reach out to [681334yd@eur.nl].
 
