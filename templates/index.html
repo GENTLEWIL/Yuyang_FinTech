@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Investment Advisor</title>
+</head>
+<body>
+    <!-- Main heading for the questionnaire -->
+    <h1>Investment Advisor Questionnaire</h1>
+    <!-- Form to collect user inputs and submit to /get_advice route -->
+    <form action="/get_advice" method="post">
+        <!-- Input field for age -->
+        <label for="age">Age:</label><br>
+        <input type="number" id="age" name="age" required><br><br>
+
+        <!-- Input field for occupation -->
+        <label for="occupation">Occupation:</label><br>
+        <input type="text" id="occupation" name="occupation" required><br><br>
+
+        <!-- Input field for annual income -->
+        <label for="income">Annual Income:</label><br>
+        <input type="number" id="income" name="income" required><br><br>
+
+        <!-- Input field for currency -->
+        <label for="currency">Currency:</label><br>
+        <input type="text" id="currency" name="currency" required><br><br>
+
+        <!-- Input field for investment horizon -->
+        <label for="investment_horizon">Investment Horizon (years):</label><br>
+        <input type="number" id="investment_horizon" name="investment_horizon" required><br><br>
+
+        <!-- Investment experience question -->
+        <h2>Which of the following best describes your investment experience?</h2>
+        <input type="radio" id="exp_a" name="investment_experience" value="A">
+        <label for="exp_a">A. Mostly invest in high-risk products like stocks, funds, forex, and less in deposits, bonds</label><br>
+        <input type="radio" id="exp_b" name="investment_experience" value="B">
+        <label for="exp_b">B. Assets are evenly distributed among deposits, bonds, bank financial products, trust products, stocks, funds, etc.</label><br>
+        <input type="radio" id="exp_c" name="investment_experience" value="C">
+        <label for="exp_c">C. Besides deposits and bonds, I hardly invest in other financial products</label><br><br>
+
+        <!-- Education and work experience question -->
+        <h2>Which of the following describes your education and work experience related to investment?</h2>
+        <input type="radio" id="edu_a" name="education_experience" value="A">
+        <label for="edu_a">A. Hold a bachelor's degree or above in finance, economics, accounting, or related to financial product investment</label><br>
+        <input type="radio" id="edu_b" name="education_experience" value="B">
+        <label for="edu_b">B. Hold securities qualification, futures qualification, fund qualification, CPA, or CFA certification</label><br>
+        <input type="radio" id="edu_c" name="education_experience" value="C">
+        <label for="edu_c">C. Have worked in finance, economics, accounting, or related fields for more than two years</label><br>
+        <input type="radio" id="edu_d" name="education_experience" value="D">
+        <label for="edu_d">D. None of the above</label><br><br>
+
+        <!-- Investment goal question -->
+        <h2>What is your investment goal?</h2>
+        <input type="radio" id="purpose_a" name="investment_purpose" value="A">
+        <label for="purpose_a">A. Steady asset appreciation</label><br>
+        <input type="radio" id="purpose_b" name="investment_purpose" value="B">
+        <label for="purpose_b">B. Rapid asset growth</label><br>
+        <input type="radio" id="purpose_c" name="investment_purpose" value="C">
+        <label for="purpose_c">C. Asset preservation</label><br><br>
+
+        <!-- Investment ratio question -->
+        <h2>What percentage of your total net assets is available for financial investment (excluding savings deposits)?</h2>
+        <input type="radio" id="net_a" name="investment_ratio" value="A">
+        <label for="net_a">A. Less than 10%</label><br>
+        <input type="radio" id="net_b" name="investment_ratio" value="B">
+        <label for="net_b">B. 10% to 25%</label><br>
+        <input type="radio" id="net_c" name="investment_ratio" value="C">
+        <label for="net_c">C. 25% to 50%</label><br>
+        <input type="radio" id="net_d" name="investment_ratio" value="D">
+        <label for="net_d">D. More than 50%</label><br><br>
+
+        <!-- Investment choice question -->
+        <h2>With a principal of 1 million units and no guarantee of principal protection, which investment opportunity would you choose?</h2>
+        <input type="radio" id="principal_a" name="investment_choice" value="A">
+        <label for="principal_a">A. 100% chance to win 1,000 units of cash and guarantee the return of the principal</label><br>
+        <input type="radio" id="principal_b" name="investment_choice" value="B">
+        <label for="principal_b">B. 50% chance to win 50,000 units of cash with a high likelihood of returning the principal</label><br>
+        <input type="radio" id="principal_c" name="investment_choice" value="C">
+        <label for="principal_c">C. 25% chance to win 500,000 units of cash with a certain possibility of losing the principal</label><br>
+        <input type="radio" id="principal_d" name="investment_choice" value="D">
+        <label for="principal_d">D. 10% chance to win 1 million units of cash with a high possibility of losing the principal</label><br><br>
+
+        <!-- Investment attitude question -->
+        <h2>Which of the following best describes your investment attitude?</h2>
+        <input type="radio" id="attitude_a" name="investment_attitude" value="A">
+        <label for="attitude_a">A. Risk-averse, do not want to lose principal, prefer stable returns</label><br>
+        <input type="radio" id="attitude_b" name="investment_attitude" value="B">
+        <label for="attitude_b">B. Conservative, willing to accept some fluctuations in returns</label><br>
+        <input type="radio" id="attitude_c" name="investment_attitude" value="C">
+        <label for="attitude_c">C. Hope to earn high returns, willing to take significant principal losses</label><br>
+        <input type="radio" id="attitude_d" name="investment_attitude" value="D">
+        <label for="attitude_d">D. Seek high returns and growth, willing to take limited principal losses</label><br><br>
+
+        <!-- Investment importance question -->
+        <h2>Is principal protection more important to you than high returns?</h2>
+        <input type="radio" id="importance_a" name="investment_importance" value="A">
+        <label for="importance_a">A. Strongly agree</label><br>
+        <input type="radio" id="importance_b" name="investment_importance" value="B">
+        <label for="importance_b">B. Disagree</label><br>
+        <input type="radio" id="importance_c" name="investment_importance" value="C">
+        <label for="importance_c">C. Indifferent</label><br><br>
+
+        <!-- Income source question -->
+        <h2>What is your primary source of income?</h2>
+        <input type="radio" id="income_a" name="income_source" value="A">
+        <label for="income_a">A. Salary, wages</label><br>
+        <input type="radio" id="income_b" name="income_source" value="B">
+        <label for="income_b">B. Rental, sale of real estate and other non-financial assets</label><br>
+        <input type="radio" id="income_c" name="income_source" value="C">
+        <label for="income_c">C. Interest, dividends, transfer of securities and other financial assets</label><br>
+        <input type="radio" id="income_d" name="income_source" value="D">
+        <label for="income_d">D. No fixed income</label><br><br>
+
+        <!-- Investment anxiety question -->
+        <h2>At what level of investment fluctuation would you feel significantly anxious?</h2>
+        <input type="radio" id="anxiety_a" name="investment_anxiety" value="A">
+        <label for="anxiety_a">A. No principal loss, but returns did not meet expectations</label><br>
+        <input type="radio" id="anxiety_b" name="investment_anxiety" value="B">
+        <label for="anxiety_b">B. Principal loss within 10%</label><br>
+        <input type="radio" id="anxiety_c" name="investment_anxiety" value="C">
+        <label for="anxiety_c">C. Principal loss between 20% and 50%</label><br>
+        <input type="radio" id="anxiety_d" name="investment_anxiety" value="D">
+        <label for="anxiety_d">D. Principal loss more than 50%</label><br>
+        <input type="radio" id="anxiety_e" name="investment_anxiety" value="E">
+        <label for="anxiety_e">E. Slight principal loss</label><br><br>
+
+        <!-- Debt status question -->
+        <h2>Do you have any significant outstanding debts? If so, what is their nature?</h2>
+        <input type="radio" id="debt_a" name="debt_status" value="A">
+        <label for="debt_a">A. Yes, personal loans from friends and family</label><br>
+        <input type="radio" id="debt_b" name="debt_status" value="B">
+        <label for="debt_b">B. Yes, long-term fixed debts like mortgage</label><br>
+        <input type="radio" id="debt_c" name="debt_status" value="C">
+        <label for="debt_c">C. No</label><br><br>
+
+        <!-- Investment experience question -->
+        <h2>How many years of experience do you have in investing in high-risk products such as stocks, funds, forex, financial derivatives, etc.?</h2>
+        <input type="radio" id="experience_a" name="investment_experience_years" value="A">
+        <label for="experience_a">A. More than 8 years</label><br>
+        <input type="radio" id="experience_b" name="investment_experience_years" value="B">
+        <label for="experience_b">B. 5-8 years</label><br>
+        <input type="radio" id="experience_c" name="investment_experience_years" value="C">
+        <label for="experience_c">C. 2-5 years</label><br>
+        <input type="radio" id="experience_d" name="investment_experience_years" value="D">
+        <label for="experience_d">D. 0-2 years</label><br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+    {% if advice %}
+    <h2>Your Investment Advice</h2>
+    <p>{{ advice }}</p>
+    {% endif %}
+</body>
+</html>
