@@ -23,7 +23,7 @@ investment_advisor/
 ├── templates/
 │ └── index.html
 └── static/
-└── style.css
+  └── style.css
 ```
 
 ## Installation
