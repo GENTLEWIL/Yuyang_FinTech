@@ -1,0 +1,64 @@
+/* Set the overall font and background color for the body */
+body {
+    font-family: Arial, sans-serif; /* Use Arial font for the text */
+    background-color: #f8f9fa; /* Set the background color to a light grey */
+    margin: 0; /* Remove default margin */
+    padding: 20px; /* Add padding around the content */
+}
+
+/* Style the container to center it and give it a background */
+.container {
+    max-width: 600px; /* Set a maximum width for the container */
+    margin: auto; /* Center the container horizontally */
+    padding: 20px; /* Add padding inside the container */
+    background-color: #ffffff; /* Set the background color to white */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle shadow around the container */
+}
+
+/* Style the main heading */
+h1 {
+    text-align: center; /* Center align the heading text */
+    color: #343a40; /* Set the text color to a dark grey */
+}
+
+/* Style the form to display its elements in a column layout */
+form {
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Arrange items in a column */
+}
+
+/* Style the labels of the form */
+label {
+    margin: 10px 0 5px; /* Add margin above and below the labels */
+    color: #495057; /* Set the text color to a medium grey */
+}
+
+/* Style the text and number input fields */
+input[type="number"],
+input[type="text"] {
+    padding: 10px; /* Add padding inside the input fields */
+    border: 1px solid #ced4da; /* Set a light grey border */
+    border-radius: 4px; /* Round the corners of the input fields */
+    margin-bottom: 10px; /* Add margin below the input fields */
+}
+
+/* Style the radio input fields */
+input[type="radio"] {
+    margin-right: 10px; /* Add margin to the right of the radio buttons */
+}
+
+/* Style the submit button */
+input[type="submit"] {
+    padding: 10px; /* Add padding inside the button */
+    border: none; /* Remove the default border */
+    border-radius: 4px; /* Round the corners of the button */
+    background-color: #007bff; /* Set the background color to blue */
+    color: #ffffff; /* Set the text color to white */
+    cursor: pointer; /* Change the cursor to a pointer when hovering over the button */
+    font-size: 16px; /* Increase the font size of the button text */
+}
+
+/* Change the background color of the submit button when hovered over */
+input[type="submit"]:hover {
+    background-color: #0056b3; /* Set a darker blue background color */
+}
