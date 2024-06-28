@@ -50,17 +50,17 @@ investment_advisor/
     ```
 
 4. Set up the OpenAI API key:
-    I already set up the available OpenAI API key. :)
+    Please set up a real OpenAI API :D 
     Meanwhile, please pay attention: The code has been updated using the `openai migrate` command to use the latest version of the OpenAI API.
     At first, the initialization part of OpenAI client with API key is:
     ```python
     import openai
-    openai.api_key = 'openai_api_key'
+    openai.api_key = 'API-key-holder'
     ```
     After implementing `openai migrate` command, the code will be updated to:
     ```python
     from openai import OpenAI
-    client = OpenAI(api_key='openai_api_key')
+    client = OpenAI(api_key='API-key-holder')
     ```
 
 6. Run the application:
