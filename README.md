@@ -50,7 +50,7 @@ investment_advisor/
     ```
 
 4. Set up the OpenAI API key:
-    Please set up a real OpenAI API :D 
+    Please set up a real OpenAI API, which has been uploaded on Canvas :D 
     Meanwhile, please pay attention: The code has been updated using the `openai migrate` command to use the latest version of the OpenAI API.
     At first, the initialization part of OpenAI client with API key is:
     ```python
