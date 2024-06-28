@@ -17,12 +17,14 @@ The InvestWiser Robo-Advisor Questionnaire is a web-based application that helps
 - OpenAI API
 
 ## File Structure
+```markdown
 investment_advisor/
 ├── app.py
 ├── templates/
 │ └── index.html
 └── static/
 └── style.css
+```
 
 ## Installation
 
