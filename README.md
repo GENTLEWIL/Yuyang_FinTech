@@ -18,12 +18,11 @@ The InvestWiser Robo-Advisor Questionnaire is a web-based application that helps
 
 ## File Structure
 investment_advisor/
-│
 ├── app.py
 ├── templates/
-│   └── index.html
+│ └── index.html
 └── static/
-    └── style.css
+└── style.css
 
 ## Installation
 
